@@ -3,6 +3,7 @@ import { Kanit } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+// import NavMenu from "@/components/NavMenu";
 
 const kanit = Kanit({
   subsets: ["latin"],
@@ -23,8 +24,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={kanit.className}>
         <Navbar />
+        {/* <NavMenu /> */}
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
