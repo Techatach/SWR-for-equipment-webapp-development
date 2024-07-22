@@ -66,7 +66,7 @@ export default function Navbar() {
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
               <div className="flex justify-start items-center gap-5">
                 <Link href="/">หน้าหลัก</Link>
-                <Link href="/">รายการครุภัณฑ์ทั้งหมด</Link>
+                <Link href="/products">รายการครุภัณฑ์ทั้งหมด</Link>
                 <Link href="/products/add">กรอกข้อมูลครุภัณฑ์</Link>
               </div>
             </Typography>

@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/Menubar.jsx", "src/components/AddProductForm.jsx", "src/components/AddEquipment.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/Menubar.jsx", "src/components/AddProductForm.jsx", "src/components/AddEquipmentForm.tsx", "src/components/AddProduct.tsx", "src/components/Navbar.tsx", "src/components/AllProducts.tsx", "src/lib/productAction.ts", "src/app/api/products/[sku]/route.ts", "src/lib/mongodb.ts", "src/components/EditProductForm.tsx"],
   "exclude": ["node_modules"]
 }

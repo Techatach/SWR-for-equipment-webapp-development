@@ -1,12 +1,14 @@
-// import AddProductForm from "@/components/AddProductForm";
-import AddEquipment from "@/components/AddEquipment";
+// import AddProduct from "@/components/AddProduct";
+import AddEquipmentForm from "@/components/AddEquipmentForm";
+// import ProductItem from "@/components/ProductItem";
 import React from "react";
 
 export default function page() {
   return (
     <div>
-      {/* <AddProductForm/> */}
-      <AddEquipment/>
+      {/* <AddProduct/> */}
+      <AddEquipmentForm />
+      {/* <ProductItem /> */}
     </div>
   );
 }
