@@ -29,7 +29,10 @@ export function useAllProducts() {
     }
     return res.json();
   }
-  const { data, isLoading, mutate, error } = useSWR(`/api/products`, fetcher);
+  const { data, isLoading, mutate, error } = useSWR(
+    `/api/products`,
+    fetcher
+  );
   return {
     data,
     isLoading,

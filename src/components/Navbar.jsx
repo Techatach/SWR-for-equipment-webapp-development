@@ -14,14 +14,14 @@ import Button from "@mui/material/Button";
 import Link from "next/link";
 
 export default function Navbar() {
-  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
-  const open = Boolean(anchorEl);
-  const handleClick = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorEl(event.currentTarget);
-  };
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
+  // const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+  // const open = Boolean(anchorEl);
+  // const handleClick = (event: React.MouseEvent<HTMLElement>) => {
+  //   setAnchorEl(event.currentTarget);
+  // };
+  // const handleClose = () => {
+  //   setAnchorEl(null);
+  // };
 
   return (
     <div>
@@ -66,7 +66,7 @@ export default function Navbar() {
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
               <div className="flex justify-start items-center gap-5">
                 <Link href="/">หน้าหลัก</Link>
-                <Link href="/products">รายการครุภัณฑ์ทั้งหมด</Link>
+                <Link href="/products">รายการครุภัณฑ์</Link>
                 <Link href="/products/add">กรอกข้อมูลครุภัณฑ์</Link>
               </div>
             </Typography>

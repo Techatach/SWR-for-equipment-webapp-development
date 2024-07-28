@@ -17,7 +17,7 @@ const productSchema = new Schema(
     budget: { type: Number, required: true },
     category: { type: String, required: true },
     group: { type: String, required: true },
-    status: { type: String, required: true },
+    statdata: { type: String, required: true },
     respondent: { type: String, required: true },
     qrcode: { type: String, required: true },
   },

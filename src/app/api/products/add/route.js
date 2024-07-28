@@ -2,7 +2,7 @@ import mongodbConnect from "@/lib/mongodb";
 import Product from "@/models/Product";
 import { NextResponse } from "next/server";
 
-export async function POST(request: Request) {
+export async function POST(request) {
   try {
     const {
       productSKU,
@@ -19,7 +19,7 @@ export async function POST(request: Request) {
       budget,
       category,
       group,
-      status,
+      statdata,
       respondent,
       qrcode,
     } = await request.json();
@@ -41,7 +41,7 @@ export async function POST(request: Request) {
       budget,
       category,
       group,
-      status,
+      statdata,
       respondent,
       qrcode,
     });
@@ -62,7 +62,7 @@ export async function POST(request: Request) {
       budget: product.budget,
       category: product.category,
       group: product.group,
-      status: product.status,
+      statdata: product.statdata,
       respondent: product.respondent,
       qrcode: product.qrcode,
     };

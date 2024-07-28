@@ -121,7 +121,7 @@ export default function ProductItem({ data, refreshProducts }) {
                 <td>{data.budget}</td>
                 <td>{data.category}</td>
                 <td>{data.group}</td>
-                <td>{data.status}</td>
+                <td>{data.statdata}</td>
                 <td>{data.respondent}</td>
                 <td>{data.qrcode}</td>
                 <td>
@@ -134,7 +134,6 @@ export default function ProductItem({ data, refreshProducts }) {
                     >
                       {/* <EditIcon sku={data.productSKU} /> */}
                       <EditProductButton sku={data.productSKU} />
-
                     </Button>
                     <Button
                       variant="contained"

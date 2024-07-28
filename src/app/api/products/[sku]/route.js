@@ -1,7 +1,7 @@
 import Product from "@/models/Product";
 import { NextResponse } from "next/server";
 
-export async function GET(request: Request, { params }) {
+export async function GET(request, { params }) {
 // export async function GET(request, { params }) {
   const { sku } = params;
 
@@ -24,7 +24,7 @@ export async function GET(request: Request, { params }) {
         budget: product.budget,
         category: product.category,
         group: product.group,
-        status: product.status,
+        statdata: product.statdata,
         respondent: product.respondent,
         qrcode: product.qrcode,
       };
@@ -36,7 +36,7 @@ export async function GET(request: Request, { params }) {
   }
 }
 
-export async function POST(request: Request, { params }) {
+export async function POST(request, { params }) {
 // export async function POST(request, { params }) {
   const { sku } = params;
   const {
@@ -54,7 +54,7 @@ export async function POST(request: Request, { params }) {
     budget,
     category,
     group,
-    status,
+    statdata,
     respondent,
     qrcode,
   } = await request.json();
@@ -77,7 +77,7 @@ export async function POST(request: Request, { params }) {
         budget,
         category,
         group,
-        status,
+        statdata,
         respondent,
         qrcode,
       }
@@ -99,7 +99,7 @@ export async function POST(request: Request, { params }) {
         budget: product.budget,
         category: product.category,
         group: product.group,
-        status: product.status,
+        statdata: product.statdata,
         respondent: product.respondent,
         qrcode: product.qrcode,
       };
@@ -111,7 +111,7 @@ export async function POST(request: Request, { params }) {
   }
 }
 
-export async function DELETE(request: Request, { params }) {
+export async function DELETE(request, { params }) {
 // export async function DELETE(request, { params }) {
   // const { sku } = params;
   const { productSKU } = await request.json();
@@ -135,7 +135,7 @@ export async function DELETE(request: Request, { params }) {
         budget: product.budget,
         category: product.category,
         group: product.group,
-        status: product.status,
+        statdata: product.statdata,
         respondent: product.respondent,
         qrcode: product.qrcode,
       };

@@ -8,8 +8,8 @@ import Loading from "@/app/loading";
 import Link from "next/link";
 
 export default function AddEquipment() {
-  const [productSKU, setProductSKU] = useState("");
   const [image, setImage] = useState("");
+  const [productSKU, setProductSKU] = useState(""); 
   const [name, setName] = useState("");
   const [num1, setNum1] = useState("");
   const [price, setPrice] = useState("");
@@ -22,7 +22,7 @@ export default function AddEquipment() {
   const [budget, setBudget] = useState("");
   const [category, setCategory] = useState("");
   const [group, setGroup] = useState("");
-  const [status, setStatus] = useState("");
+  const [statdata, setStatdata] = useState("");
   const [respondent, setRespondent] = useState("");
   const [qrcode, setQrcode] = useState("");
 
@@ -32,8 +32,8 @@ export default function AddEquipment() {
 
   //ฟังก์ชันสำหรับเคลียร์ค่าในแบบฟอร์ม
   function clearFormData() {
-    setProductSKU("");
     setImage("");
+    setProductSKU("");    
     setName("");
     setNum1("");
     setPrice("");
@@ -46,7 +46,7 @@ export default function AddEquipment() {
     setBudget("");
     setCategory("");
     setGroup("");
-    setStatus("");
+    setStatdata("");
     setRespondent("");
     setQrcode("");
   }
@@ -56,12 +56,11 @@ export default function AddEquipment() {
     setIsLoading(true);
     try {
       setMessage({ ...message, text: " ", error: false });
-      const res = await fetch("/api/products/add", {
-        // const res = await fetch("http://localhost:3000/api/products/add", {
+        const res = await fetch("/api/products/add", {
         method: "POST",
         body: JSON.stringify({
-          productSKU,
           image,
+          productSKU,          
           name,
           num1,
           price,
@@ -74,7 +73,7 @@ export default function AddEquipment() {
           budget,
           category,
           group,
-          status,
+          statdata,
           respondent,
           qrcode,
         }),
@@ -453,8 +452,8 @@ export default function AddEquipment() {
                 name="status"
                 id="status"
                 autoComplete="given-name"
-                value={status}
-                onChange={(e) => setStatus(e.target.value)}
+                value={statdata}
+                onChange={(e) => setStatdata(e.target.value)}
                 className="text-xl px-3 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               >
                 <option disabled selected>

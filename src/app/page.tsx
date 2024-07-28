@@ -10,9 +10,8 @@ export default function Home() {
       {/* <AddProductForm/> */}
       {/* <AddEquipmentForm/> */}
       {/* <AddMenuEquipment /> */}
-      <AllProducts/>
+      <AllProducts />
       {/* AllProducts */}
-
     </div>
   );
 }

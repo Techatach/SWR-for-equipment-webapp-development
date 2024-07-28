@@ -9,10 +9,10 @@ export default function Footer() {
     <div>
       <footer className="footer footer-center bg-base-200 text-base-content shadow-lg p-16 mb-5 bg-body rounded">
         <nav className="grid grid-flow-col gap-4">
-          <a className="link link-hover">เกี่ยวกับ</a>
-          <a className="link link-hover">ติดต่อ</a>
-          <a className="link link-hover">พัสดุ</a>
-          <a className="link link-hover">ครุภัณฑ์</a>
+          <a className="link link-hover">หน้าหลัก</a>
+          <a className="link link-hover">รายการครุภัณฑ์</a>
+          {/* <a className="link link-hover">พัสดุ</a> */}
+          <a className="link link-hover">กรอกข้อมูลครุภัณฑ์</a>
         </nav>
         <nav>
           <div className="grid grid-flow-col gap-4">

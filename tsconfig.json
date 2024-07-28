@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/Menubar.jsx", "src/components/AddProductForm.jsx", "src/components/AddEquipmentForm.tsx", "src/components/AddProduct.tsx", "src/components/Navbar.tsx", "src/components/AllProducts.tsx", "src/lib/productAction.ts", "src/app/api/products/[sku]/route.ts", "src/lib/mongodb.ts", "src/components/EditProductForm.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/Menubar.jsx", "src/components/AddProductForm.jsx", "src/components/AddEquipmentForm.jsx", "src/components/AddProduct.tsx", "src/components/Navbar.jsx", "src/components/AllProducts.jsx", "src/lib/productAction.js", "src/app/api/products/[sku]/route.js", "src/lib/mongodb.js", "src/components/EditProductForm.jsx", "src/app/api/products/add/route.js", "src/app/api/products/route.js", "src/components/EditProductButton.jsx", "src/components/DeleteProductButton.jsx", "src/models/Product.js", "src/components/ProductItem.jsx", "src/components/Title.jsx", "src/components/Footer.่sx"],
   "exclude": ["node_modules"]
 }
